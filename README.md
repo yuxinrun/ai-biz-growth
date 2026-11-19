@@ -6,6 +6,25 @@
 
 纯静态站点：HTML5 + CSS3 + 原生 JavaScript，零 npm 依赖，所有数据存放在本地 JSON，所有插图为原创 SVG。**没有后端，也不请求任何第三方接口。**
 
+## 页面预览
+
+> 截图由 `node tools/screenshot.js` 调本机 Chrome 无头模式生成，与 `file://` 直接双击打开的效果一致。
+
+<p><img src="docs/screenshots/home.png" alt="首页：AI 不是大企业的专利，小老板也能用 AI 做增长" width="100%"></p>
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/growth.png" alt="AI 获客指南：11 个渠道教程与主题筛选" width="100%"></td>
+    <td width="50%"><img src="docs/screenshots/tools.png" alt="AI 工具导航：38 个工具、11 个分类筛选" width="100%"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/prompts.png" alt="AI 提示词库：27 条可复制提示词，按场景与标签筛选" width="100%"></td>
+    <td width="50%"><img src="docs/screenshots/article.png" alt="文章详情：目录、阅读进度、收藏与相关推荐" width="100%"></td>
+  </tr>
+</table>
+
+<p align="center"><img src="docs/screenshots/mobile.png" alt="移动端首页：导航收进折叠菜单" width="320"></p>
+
 ---
 
 ## 一、本地运行
@@ -49,6 +68,7 @@ ai-biz-growth/
 ├─ sitemap.html            人类可读的站点地图（页脚「站点地图」指向这里）
 ├─ sitemap.xml             给搜索引擎的 XML 站点地图
 ├─ sitemap.xsl             sitemap.xml 的浏览样式（浏览器打开 XML 时渲染成表格）
+├─ docs/screenshots/       README 页面截图（node tools/screenshot.js 生成）
 └─ assets/
    ├─ css/
    │  ├─ style.css         设计 Token、组件、布局
@@ -217,6 +237,7 @@ ai-biz-growth/
 | `build-sitemap-page.js` | 以 `about.html` 为模板生成 `sitemap.html`，页面与文章清单自动取自目录和 `articles.json` | 新增文章或栏目后 |
 | `inline-sprite.js` | 把 `sprite.svg` 内联进所有页面，并把 `<use href="外部文件#id">` 改写为 `<use href="#id">` | 每次改完图标 sprite |
 | `stamp-assets.js` | 给 HTML 里的 CSS/JS 打内容指纹 `?v=<sha1>`，避免改完看不到效果 | 每次改完 CSS/JS |
+| `screenshot.js` | 调本机 Chrome / Edge 无头模式，重截 `docs/screenshots/` 下的 6 张页面图 | 改版、页面样式变化后 |
 | `check.js` | 静态检查：各页基础 SEO、死链、锚点、重复 id、数据字段、数据脚本与 JSON 是否一致、站点地图覆盖是否完整 | 交付前 |
 | `check-icons.js` | 校验 JS 里 `icon('i-xxx')` 用到的 id 都存在于 sprite | 新增图标或页面脚本后 |
 
