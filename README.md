@@ -191,7 +191,7 @@ ai-biz-growth/
 - 图片均有 `alt`，非首屏 `loading="lazy"`，Hero 图 `fetchpriority="high"`。
 - `robots.txt` + `sitemap.xml`（含 14 篇文章 URL）+ `sitemap.html`（人类可读版，页脚可直达）。
 
-**正式上线前请替换域名**：全站 `canonical` / `og:url` / `sitemap.xml` / `robots.txt` 使用占位域名 `https://aibizgrowth.cn`。
+**站点地址**：全站 `canonical` / `og:url` / JSON-LD / `sitemap.xml` / `robots.txt` 统一为 `https://yuxin.run/ai-biz-growth/`（子目录部署，路径前缀不可省略）；`tools/check.js` 的 `SITE` 常量会校验收尾地址是否一致。
 
 ---
 

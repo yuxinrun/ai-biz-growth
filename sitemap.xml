@@ -4,69 +4,69 @@
 <?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://aibizgrowth.cn/index.html</loc>
+    <loc>https://yuxin.run/ai-biz-growth/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://aibizgrowth.cn/growth.html</loc>
+    <loc>https://yuxin.run/ai-biz-growth/growth.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aibizgrowth.cn/efficiency.html</loc>
+    <loc>https://yuxin.run/ai-biz-growth/efficiency.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aibizgrowth.cn/cases.html</loc>
+    <loc>https://yuxin.run/ai-biz-growth/cases.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aibizgrowth.cn/prompts.html</loc>
+    <loc>https://yuxin.run/ai-biz-growth/prompts.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aibizgrowth.cn/tools.html</loc>
+    <loc>https://yuxin.run/ai-biz-growth/tools.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aibizgrowth.cn/articles.html</loc>
+    <loc>https://yuxin.run/ai-biz-growth/articles.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aibizgrowth.cn/websites.html</loc>
+    <loc>https://yuxin.run/ai-biz-growth/websites.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aibizgrowth.cn/books.html</loc>
+    <loc>https://yuxin.run/ai-biz-growth/books.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aibizgrowth.cn/about.html</loc>
+    <loc>https://yuxin.run/ai-biz-growth/about.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <!-- 文章详情（单模板 + ?id= 参数） -->
-  <url><loc>https://aibizgrowth.cn/article-detail.html?id=restaurant-moments</loc><priority>0.7</priority></url>
-  <url><loc>https://aibizgrowth.cn/article-detail.html?id=no-camera-video</loc><priority>0.7</priority></url>
-  <url><loc>https://aibizgrowth.cn/article-detail.html?id=one-person-office</loc><priority>0.7</priority></url>
-  <url><loc>https://aibizgrowth.cn/article-detail.html?id=xhs-local</loc><priority>0.7</priority></url>
-  <url><loc>https://aibizgrowth.cn/article-detail.html?id=low-budget-workflow</loc><priority>0.7</priority></url>
-  <url><loc>https://aibizgrowth.cn/article-detail.html?id=weekly-content</loc><priority>0.7</priority></url>
-  <url><loc>https://aibizgrowth.cn/article-detail.html?id=ai-knowledge-base</loc><priority>0.7</priority></url>
-  <url><loc>https://aibizgrowth.cn/article-detail.html?id=why-ai-copy-fails</loc><priority>0.7</priority></url>
-  <url><loc>https://aibizgrowth.cn/article-detail.html?id=30-day-plan</loc><priority>0.7</priority></url>
-  <url><loc>https://aibizgrowth.cn/article-detail.html?id=ai-customer-service</loc><priority>0.7</priority></url>
-  <url><loc>https://aibizgrowth.cn/article-detail.html?id=monthly-review</loc><priority>0.7</priority></url>
-  <url><loc>https://aibizgrowth.cn/article-detail.html?id=no-ad-traffic</loc><priority>0.7</priority></url>
-  <url><loc>https://aibizgrowth.cn/article-detail.html?id=menu-aesthetic</loc><priority>0.7</priority></url>
-  <url><loc>https://aibizgrowth.cn/article-detail.html?id=private-domain-memory</loc><priority>0.7</priority></url>
+  <url><loc>https://yuxin.run/ai-biz-growth/article-detail.html?id=restaurant-moments</loc><priority>0.7</priority></url>
+  <url><loc>https://yuxin.run/ai-biz-growth/article-detail.html?id=no-camera-video</loc><priority>0.7</priority></url>
+  <url><loc>https://yuxin.run/ai-biz-growth/article-detail.html?id=one-person-office</loc><priority>0.7</priority></url>
+  <url><loc>https://yuxin.run/ai-biz-growth/article-detail.html?id=xhs-local</loc><priority>0.7</priority></url>
+  <url><loc>https://yuxin.run/ai-biz-growth/article-detail.html?id=low-budget-workflow</loc><priority>0.7</priority></url>
+  <url><loc>https://yuxin.run/ai-biz-growth/article-detail.html?id=weekly-content</loc><priority>0.7</priority></url>
+  <url><loc>https://yuxin.run/ai-biz-growth/article-detail.html?id=ai-knowledge-base</loc><priority>0.7</priority></url>
+  <url><loc>https://yuxin.run/ai-biz-growth/article-detail.html?id=why-ai-copy-fails</loc><priority>0.7</priority></url>
+  <url><loc>https://yuxin.run/ai-biz-growth/article-detail.html?id=30-day-plan</loc><priority>0.7</priority></url>
+  <url><loc>https://yuxin.run/ai-biz-growth/article-detail.html?id=ai-customer-service</loc><priority>0.7</priority></url>
+  <url><loc>https://yuxin.run/ai-biz-growth/article-detail.html?id=monthly-review</loc><priority>0.7</priority></url>
+  <url><loc>https://yuxin.run/ai-biz-growth/article-detail.html?id=no-ad-traffic</loc><priority>0.7</priority></url>
+  <url><loc>https://yuxin.run/ai-biz-growth/article-detail.html?id=menu-aesthetic</loc><priority>0.7</priority></url>
+  <url><loc>https://yuxin.run/ai-biz-growth/article-detail.html?id=private-domain-memory</loc><priority>0.7</priority></url>
 </urlset>

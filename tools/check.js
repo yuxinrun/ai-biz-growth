@@ -139,8 +139,10 @@ if (!exists('sitemap.xsl')) errors.push('[站点地图] 缺少 sitemap.xsl');
 const xml = exists('sitemap.xml') ? read('sitemap.xml') : '';
 if (!xml) errors.push('[站点地图] 缺少 sitemap.xml');
 else if (xml.indexOf('href="sitemap.xsl"') === -1) errors.push('[站点地图] sitemap.xml 未引用 sitemap.xsl');
-const locs = (xml.match(/<loc>https:\/\/aibizgrowth\.cn\/([^<]+)<\/loc>/g) || [])
-  .map((s) => s.replace(/^<loc>https:\/\/aibizgrowth\.cn\//, '').replace(/<\/loc>$/, ''));
+/* 站点根地址：站点地图里的 loc 与各页 canonical / og:url 都必须以它开头 */
+const SITE = 'https://yuxin.run/ai-biz-growth/';
+const locs = (xml.match(/<loc>([^<]+)<\/loc>/g) || [])
+  .map((s) => s.replace(/^<loc>/, '').replace(/<\/loc>$/, '').replace(SITE, ''));
 /* 404 与 sitemap 自身不应出现在站点地图里；article-detail 是单模板，
    真实地址带 ?id= 参数，由下面的文章循环单独校验 */
 const mustHave = pages.filter((p) => p !== '404.html' && p !== 'sitemap.html' && p !== 'article-detail.html');
@@ -157,6 +159,15 @@ if (!exists('sitemap.html')) {
     if (sm.indexOf('article-detail.html?id=' + a.id) === -1) errors.push(`[站点地图] sitemap.html 未链接文章 ${a.id}`);
   });
 }
+
+/* 全站 canonical / og:url 必须使用正式站点地址（404 页无 canonical，跳过） */
+pages.forEach((p) => {
+  const html = read(p);
+  const c = html.match(/<link rel="canonical" href="([^"]+)"/);
+  if (c && c[1].indexOf(SITE) !== 0) errors.push(`[canonical] ${p}: 应为 ${SITE}…，实际 ${c[1]}`);
+  const og = html.match(/<meta property="og:url" content="([^"]+)"/);
+  if (og && og[1].indexOf(SITE) !== 0) errors.push(`[og:url] ${p}: 应为 ${SITE}…，实际 ${og[1]}`);
+});
 
 /* 404 页不提供常规入口：只有服务器返回 404 时才自动展示 */
 pages.forEach((p) => {

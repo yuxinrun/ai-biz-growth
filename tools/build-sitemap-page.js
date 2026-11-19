@@ -141,15 +141,15 @@ src = src.replace(/<meta name="description" content="[\s\S]*?">/,
 src = src.replace(/<meta name="keywords" content="[\s\S]*?">/,
   '<meta name="keywords" content="站点地图,网站导航,AI经营增长指南">');
 src = src.replace(/<link rel="canonical" href="[\s\S]*?">/,
-  '<link rel="canonical" href="https://aibizgrowth.cn/sitemap.html">');
+  '<link rel="canonical" href="https://yuxin.run/ai-biz-growth/sitemap.html">');
 src = src.replace(/<meta property="og:title" content="[\s\S]*?">/,
   '<meta property="og:title" content="站点地图：全站页面与文章一览">');
 src = src.replace(/<meta property="og:description" content="[\s\S]*?">/,
   '<meta property="og:description" content="12 个栏目页面与 ' + articles.length + ' 篇实战文章，一页看全。">');
 src = src.replace(/<meta property="og:url" content="[\s\S]*?">/,
-  '<meta property="og:url" content="https://aibizgrowth.cn/sitemap.html">');
+  '<meta property="og:url" content="https://yuxin.run/ai-biz-growth/sitemap.html">');
 src = src.replace(/(<script type="application\/ld\+json">)[\s\S]*?(<\/script>)/,
-  '$1\n{"@context":"https://schema.org","@type":"WebPage","name":"站点地图","description":"全站页面与文章一览","inLanguage":"zh-CN","url":"https://aibizgrowth.cn/sitemap.html"}\n$2');
+  '$1\n{"@context":"https://schema.org","@type":"WebPage","name":"站点地图","description":"全站页面与文章一览","inLanguage":"zh-CN","url":"https://yuxin.run/ai-biz-growth/sitemap.html"}\n$2');
 
 src = src.replace(/<main id="main">[\s\S]*?<\/main>/, '<main id="main">\n' + mainInner + '\n</main>');
 
