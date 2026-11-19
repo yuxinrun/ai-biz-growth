@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 浏览器直接打开本文件时按 sitemap.xsl 渲染成表格；爬虫只读 XML。
+     人类可读版：sitemap.html（file:// 下部分浏览器会忽略 XSL，显示源码属正常现象）。 -->
+<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://aibizgrowth.cn/index.html</loc>

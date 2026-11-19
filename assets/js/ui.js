@@ -31,6 +31,22 @@
     return scripts[src];
   }
 
+  /* 数据到手后页面脚本会在同一轮里渲染卡片，下一轮事件循环再把新出现的
+     .reveal 交给 IntersectionObserver；否则卡片会一直停在 opacity:0，
+     看起来就像「数据没加载出来」。
+     另外对视口内的卡片直接标记显示：不依赖 IO 回调时序，任何环境下
+     首屏可见的卡片都不会空白（transition 仍在，依旧有淡入效果）。 */
+  function revealSoon() {
+    setTimeout(function () {
+      if (window.ABG && window.ABG.reveal) window.ABG.reveal();
+      var nodes = document.querySelectorAll('.reveal:not(.is-in)');
+      for (var i = 0; i < nodes.length; i++) {
+        var r = nodes[i].getBoundingClientRect();
+        if (r.bottom > 0 && r.top < window.innerHeight) nodes[i].classList.add('is-in');
+      }
+    }, 0);
+  }
+
   function load(name) {
     if (cache[name]) return cache[name];
     var key = name.replace(/\.json$/, '');
@@ -54,7 +70,10 @@
     }
 
     /* 失败后清掉缓存，刷新或重试时还能再试一次 */
-    cache[name] = promise['catch'](function (err) {
+    cache[name] = promise.then(function (data) {
+      revealSoon();
+      return data;
+    })['catch'](function (err) {
       delete cache[name];
       throw err;
     });

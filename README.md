@@ -44,9 +44,11 @@ ai-biz-growth/
 ├─ articles.html           实战文章列表（筛选、标签、收藏）
 ├─ article-detail.html     文章详情模板（?id=xxx）
 ├─ about.html              关于我们 / 内容原则 / 使用方法
-├─ 404.html                404 页面
+├─ 404.html                404 页面（不挂常规入口，由服务器返回 404 时展示）
 ├─ robots.txt
-├─ sitemap.xml
+├─ sitemap.html            人类可读的站点地图（页脚「站点地图」指向这里）
+├─ sitemap.xml             给搜索引擎的 XML 站点地图
+├─ sitemap.xsl             sitemap.xml 的浏览样式（浏览器打开 XML 时渲染成表格）
 └─ assets/
    ├─ css/
    │  ├─ style.css         设计 Token、组件、布局
@@ -143,7 +145,7 @@ ai-biz-growth/
 
 | 功能 | 实现位置 | 说明 |
 | --- | --- | --- |
-| 响应式导航 / 汉堡菜单 | `main.js` + `.drawer` | ≤1080px 显示抽屉，Esc 关闭，锁定滚动 |
+| 响应式导航 / 汉堡菜单 | `main.js` + `.drawer` | ≤1080px 显示抽屉（「关于」也收进抽屉），Esc 关闭，锁定滚动 |
 | 全站搜索 | `search.js` | 聚合 8 个 JSON + 10 个页面，`/` 或 `Ctrl+K` 唤起，↑↓ + Enter |
 | 分类 / 标签筛选 | `ui.js#bindFilter`、`articles.js` | chips 带数量，无结果有兜底提示 |
 | 提示词一键复制 | `main.js#initCopy` | Clipboard API，失败回退 `execCommand`，均失败给出提示 |
@@ -187,7 +189,7 @@ ai-biz-growth/
 - 结构化数据：列表页 `CollectionPage`，文章页动态注入 `Article` + `BreadcrumbList`，关于页 `AboutPage`。
 - 面包屑、跳过导航链接（skip-link）、`aria-current`、`aria-pressed`、`focus-visible`。
 - 图片均有 `alt`，非首屏 `loading="lazy"`，Hero 图 `fetchpriority="high"`。
-- `robots.txt` + `sitemap.xml`（含 14 篇文章 URL）。
+- `robots.txt` + `sitemap.xml`（含 14 篇文章 URL）+ `sitemap.html`（人类可读版，页脚可直达）。
 
 **正式上线前请替换域名**：全站 `canonical` / `og:url` / `sitemap.xml` / `robots.txt` 使用占位域名 `https://aibizgrowth.cn`。
 
@@ -212,15 +214,16 @@ ai-biz-growth/
 | 脚本 | 作用 | 什么时候跑 |
 | --- | --- | --- |
 | `build-data-js.js` | 把 `assets/data/*.json` 生成为同名 `.js`（`window.ABG_DATA`），供 `file://` 直接打开时加载 | 每次改完 JSON |
-| `inline-sprite.js` | 把 `sprite.svg` 内联进 12 个页面，并把 `<use href="外部文件#id">` 改写为 `<use href="#id">` | 每次改完图标 sprite |
+| `build-sitemap-page.js` | 以 `about.html` 为模板生成 `sitemap.html`，页面与文章清单自动取自目录和 `articles.json` | 新增文章或栏目后 |
+| `inline-sprite.js` | 把 `sprite.svg` 内联进所有页面，并把 `<use href="外部文件#id">` 改写为 `<use href="#id">` | 每次改完图标 sprite |
 | `stamp-assets.js` | 给 HTML 里的 CSS/JS 打内容指纹 `?v=<sha1>`，避免改完看不到效果 | 每次改完 CSS/JS |
-| `check.js` | 静态检查：12 页基础 SEO、死链、锚点、重复 id、数据必填字段、数据脚本与 JSON 是否一致 | 交付前 |
+| `check.js` | 静态检查：各页基础 SEO、死链、锚点、重复 id、数据字段、数据脚本与 JSON 是否一致、站点地图覆盖是否完整 | 交付前 |
 | `check-icons.js` | 校验 JS 里 `icon('i-xxx')` 用到的 id 都存在于 sprite | 新增图标或页面脚本后 |
 
 一条命令跑完整个构建 + 自检：
 
 ```powershell
-node tools/build-data-js.js; node tools/inline-sprite.js; node tools/stamp-assets.js; node tools/check.js; node tools/check-icons.js
+node tools/build-data-js.js; node tools/build-sitemap-page.js; node tools/inline-sprite.js; node tools/stamp-assets.js; node tools/check.js; node tools/check-icons.js
 ```
 
 ---
@@ -228,6 +231,7 @@ node tools/build-data-js.js; node tools/inline-sprite.js; node tools/stamp-asset
 ## 九、已知限制与后续可做
 
 - **已支持直接双击打开**（`file://`）：数据走 `assets/data/*.js`，图标为内联 SVG sprite。只是不支持 `fetch` 方式的扩展，新增数据仍建议走 `build-data-js.js`。
+- **404 页不挂在页脚的常规入口**：只有服务器返回 404 时才会展示。`file://` 直接打开时浏览器不会自动跳转，部署时请把 404 指向 `404.html`（GitHub Pages / Netlify / Vercel 默认识别；Nginx 用 `error_page 404 /404.html`）。
 - **文章详情为客户端渲染**（单模板 + `?id=`）。SEO 友好度不如静态预渲染。若正式运营，建议用构建脚本把 14 篇文章预渲染为独立 HTML（如 `articles/restaurant-moments.html`），并同步 `sitemap.xml`。
 - 搜索为纯前端字符串匹配，数据量再大时建议改为预生成索引（如 `search-index.json`）。
 - 订阅表单为演示，正式上线需接入邮件服务。

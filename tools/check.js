@@ -134,6 +134,35 @@ Object.keys(data).forEach((name) => {
   }
 });
 
+/* 站点地图：sitemap.xml / sitemap.html / sitemap.xsl 的覆盖范围 */
+if (!exists('sitemap.xsl')) errors.push('[站点地图] 缺少 sitemap.xsl');
+const xml = exists('sitemap.xml') ? read('sitemap.xml') : '';
+if (!xml) errors.push('[站点地图] 缺少 sitemap.xml');
+else if (xml.indexOf('href="sitemap.xsl"') === -1) errors.push('[站点地图] sitemap.xml 未引用 sitemap.xsl');
+const locs = (xml.match(/<loc>https:\/\/aibizgrowth\.cn\/([^<]+)<\/loc>/g) || [])
+  .map((s) => s.replace(/^<loc>https:\/\/aibizgrowth\.cn\//, '').replace(/<\/loc>$/, ''));
+/* 404 与 sitemap 自身不应出现在站点地图里；article-detail 是单模板，
+   真实地址带 ?id= 参数，由下面的文章循环单独校验 */
+const mustHave = pages.filter((p) => p !== '404.html' && p !== 'sitemap.html' && p !== 'article-detail.html');
+mustHave.forEach((p) => { if (!locs.includes(p)) errors.push(`[站点地图] sitemap.xml 缺少 ${p}`); });
+data.articles.articles.forEach((a) => {
+  if (!locs.includes('article-detail.html?id=' + a.id)) errors.push(`[站点地图] sitemap.xml 缺少文章 ${a.id}`);
+});
+if (!exists('sitemap.html')) {
+  errors.push('[站点地图] 缺少 sitemap.html，请运行 node tools/build-sitemap-page.js');
+} else {
+  const sm = read('sitemap.html');
+  mustHave.forEach((p) => { if (sm.indexOf('href="' + p + '"') === -1) errors.push(`[站点地图] sitemap.html 未链接 ${p}`); });
+  data.articles.articles.forEach((a) => {
+    if (sm.indexOf('article-detail.html?id=' + a.id) === -1) errors.push(`[站点地图] sitemap.html 未链接文章 ${a.id}`);
+  });
+}
+
+/* 404 页不提供常规入口：只有服务器返回 404 时才自动展示 */
+pages.forEach((p) => {
+  if (read(p).indexOf('href="404.html"') !== -1) errors.push(`[404] ${p}: 仍有指向 404.html 的链接`);
+});
+
 /* 数据完整性 */
 const count = {
   文章: data.articles.articles.length,

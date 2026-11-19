@@ -287,15 +287,22 @@
     syncFavButtons();
   }
 
-  /* ---------- 入场动画 ---------- */
+  /* ---------- 入场动画 ----------
+     数据卡片是异步渲染的，所以 ABG.reveal 必须始终存在，
+     即使首次扫描时页面上还没有任何 .reveal 元素。 */
   function initReveal() {
-    var items = $$('.reveal');
-    if (!items.length) return;
     var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function showAll(root) {
+      $$('.reveal:not(.is-in)', root || document).forEach(function (el) { el.classList.add('is-in'); });
+    }
+
     if (reduced || !('IntersectionObserver' in window)) {
-      items.forEach(function (el) { el.classList.add('is-in'); });
+      window.ABG.reveal = showAll;
+      showAll();
       return;
     }
+
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
@@ -304,10 +311,11 @@
         }
       });
     }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
-    items.forEach(function (el) { io.observe(el); });
+
     window.ABG.reveal = function (root) {
       $$('.reveal:not(.is-in)', root || document).forEach(function (el) { io.observe(el); });
     };
+    window.ABG.reveal();
   }
 
   /* ---------- 订阅表单（静态演示，不发请求） ---------- */

@@ -14,6 +14,9 @@
   .nav-toggle { display: grid; }
   .nav-actions { margin-left: auto; }
   .nav-cta { display: none; }
+  /* 导航收进抽屉后，「关于」也一并收进去（抽屉底部已有「关于我们」），
+     否则窄屏下这个按钮会被挤成竖排两行，很难看。 */
+  .nav-actions > .btn { display: none; }
   .footer-grid { grid-template-columns: 1.4fr 1fr 1fr; }
   .footer-about { grid-column: 1 / -1; }
   .hero__inner { grid-template-columns: 1fr; }
