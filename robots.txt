@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# 文章详情页依赖查询参数渲染，允许抓取
+Allow: /article-detail.html
+
+# 演示站点：如正式上线，请把下面的域名替换为真实域名
+Sitemap: https://aibizgrowth.cn/sitemap.xml

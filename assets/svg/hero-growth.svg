@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 640" role="img" aria-labelledby="heroTitle heroDesc" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif">
+  <title id="heroTitle">小店老板用 AI 做经营增长的插画</title>
+  <desc id="heroDesc">一家小店门口，老板拿着平板使用 AI 助手，旁边漂浮着文案生成、到店数据和内容排期的界面卡片。全部为原创矢量插画。</desc>
+
+  <defs>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDFEFF"/>
+      <stop offset="1" stop-color="#EDF4FF"/>
+    </linearGradient>
+    <linearGradient id="signGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B3A5F"/>
+      <stop offset="1" stop-color="#122943"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8FB6FF"/>
+      <stop offset="1" stop-color="#3478F6"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#142D4E" flood-opacity="0.10"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#142D4E" flood-opacity="0.08"/>
+    </filter>
+    <pattern id="dotGrid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.4" fill="#142D4E" opacity="0.10"/>
+    </pattern>
+  </defs>
+
+  <!-- 背景面板 -->
+  <rect x="14" y="18" width="732" height="600" rx="36" fill="url(#panelGrad)"/>
+  <rect x="14" y="18" width="732" height="600" rx="36" fill="url(#dotGrid)" opacity="0.55"/>
+  <path d="M14 470 C 150 380 240 560 380 470 C 520 380 610 520 746 430 L746 582 A36 36 0 0 1 710 618 L50 618 A36 36 0 0 1 14 582 Z" fill="#E3EEFF" opacity="0.55"/>
+  <circle cx="58" cy="62" r="24" fill="none" stroke="#FFB547" stroke-width="2.5" opacity="0.5"/>
+  <circle cx="712" cy="70" r="7" fill="#FFB547" opacity="0.55"/>
+
+  <!-- 装饰 -->
+  <g stroke="#B9CCEA" stroke-width="2" stroke-dasharray="5 8" fill="none" stroke-linecap="round">
+    <path d="M322 216 C 372 176 420 162 470 158"/>
+    <path d="M528 302 C 546 272 556 252 566 236"/>
+    <path d="M330 296 C 366 300 394 312 424 332"/>
+  </g>
+  <g fill="#FFB547">
+    <path d="M356 138 l4 11 11 4 -11 4 -4 11 -4 -11 -11 -4 11 -4 Z"/>
+    <path d="M510 208 l2.6 7 7 2.6 -7 2.6 -2.6 7 -2.6 -7 -7 -2.6 7 -2.6 Z" opacity="0.8"/>
+  </g>
+  <circle cx="352" cy="188" r="4.5" fill="#3478F6" opacity="0.45"/>
+  <circle cx="722" cy="470" r="5" fill="#1F9D8B" opacity="0.45"/>
+
+  <!-- 店铺 -->
+  <g>
+    <ellipse cx="188" cy="562" rx="128" ry="12" fill="#142D4E" opacity="0.07"/>
+    <rect x="62" y="300" width="248" height="248" rx="10" fill="#FFFFFF" stroke="#DCE6F4" stroke-width="2"/>
+
+    <!-- 招牌 -->
+    <rect x="86" y="222" width="200" height="48" rx="12" fill="url(#signGrad)"/>
+    <circle cx="107" cy="246" r="4.5" fill="#FFB547"/>
+    <text x="200" y="251" text-anchor="middle" font-size="13.5" font-weight="600" fill="#FFFFFF" letter-spacing="0.5">小店 · AI 增长中</text>
+
+    <!-- 雨棚 -->
+    <g>
+      <rect x="46" y="270" width="280" height="40" fill="#FFFFFF"/>
+      <rect x="46" y="270" width="46.7" height="40" fill="#142D4E"/>
+      <rect x="139.4" y="270" width="46.7" height="40" fill="#142D4E"/>
+      <rect x="232.8" y="270" width="46.7" height="40" fill="#142D4E"/>
+      <rect x="92.7" y="270" width="46.7" height="40" fill="#EAF1FF"/>
+      <rect x="186.1" y="270" width="46.7" height="40" fill="#EAF1FF"/>
+      <rect x="279.5" y="270" width="46.7" height="40" fill="#EAF1FF"/>
+      <g>
+        <path d="M46 310 A23.3 23.3 0 0 0 92.7 310 Z" fill="#142D4E"/>
+        <path d="M92.7 310 A23.3 23.3 0 0 0 139.4 310 Z" fill="#EAF1FF"/>
+        <path d="M139.4 310 A23.3 23.3 0 0 0 186.1 310 Z" fill="#142D4E"/>
+        <path d="M186.1 310 A23.3 23.3 0 0 0 232.8 310 Z" fill="#EAF1FF"/>
+        <path d="M232.8 310 A23.3 23.3 0 0 0 279.5 310 Z" fill="#142D4E"/>
+        <path d="M279.5 310 A23.3 23.3 0 0 0 326.2 310 Z" fill="#EAF1FF"/>
+      </g>
+      <rect x="46" y="268" width="280" height="4" rx="2" fill="#142D4E" opacity="0.85"/>
+    </g>
+
+    <!-- 橱窗 -->
+    <rect x="84" y="352" width="104" height="92" rx="8" fill="#FFF5E1" stroke="#E7D6B5" stroke-width="2"/>
+    <path d="M136 354 V442" stroke="#E7D6B5" stroke-width="2"/>
+    <rect x="96" y="398" width="14" height="30" rx="4" fill="#3478F6" opacity="0.7"/>
+    <rect x="117" y="408" width="13" height="20" rx="4" fill="#FFB547"/>
+    <circle cx="160" cy="418" r="10" fill="#1F9D8B" opacity="0.65"/>
+    <path d="M92 430 H180" stroke="#E0CBA6" stroke-width="2"/>
+    <rect x="84" y="340" width="104" height="7" rx="3.5" fill="#DCE6F4"/>
+
+    <!-- 门 -->
+    <rect x="210" y="404" width="76" height="144" rx="8" fill="#EAF1FF" stroke="#CFDDEF" stroke-width="2"/>
+    <rect x="220" y="414" width="56" height="72" rx="4" fill="#F9FCFF" stroke="#DCE8F7" stroke-width="2"/>
+    <path d="M220 452 H276" stroke="#E4EDF9" stroke-width="2"/>
+    <circle cx="220" cy="482" r="3.5" fill="#8A97A8"/>
+    <rect x="228" y="494" width="40" height="18" rx="9" fill="#FFFFFF" stroke="#DCE6F4"/>
+    <text x="248" y="507" text-anchor="middle" font-size="8.5" fill="#1F9D8B" font-weight="600">营业中</text>
+    <rect x="240" y="382" width="16" height="8" rx="4" fill="#FFB547"/>
+    <rect x="198" y="546" width="100" height="8" rx="4" fill="#DCE6F4"/>
+
+    <!-- 绿植 -->
+    <g>
+      <path d="M82 506 C68 496 66 476 78 466 C90 478 92 494 88 506 Z" fill="#2FAE9A"/>
+      <path d="M104 506 C118 494 120 474 108 464 C96 476 94 494 98 506 Z" fill="#1F9D8B"/>
+      <path d="M94 508 C92 490 94 476 96 466" stroke="#14776A" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M78 508 h30 l-4 28 h-22 Z" fill="#FFB547"/>
+      <path d="M78 508 h30 l-1.5 10 h-27 Z" fill="#F0A63C"/>
+    </g>
+  </g>
+
+  <!-- 老板 -->
+  <g>
+    <ellipse cx="472" cy="554" rx="58" ry="10" fill="#142D4E" opacity="0.07"/>
+    <!-- 腿 -->
+    <path d="M448 458 h42 l5 72 h-18 l-6 -44 -6 44 h-18 Z" fill="#1D3557"/>
+    <rect x="436" y="528" width="32" height="11" rx="5.5" fill="#142D4E"/>
+    <rect x="470" y="528" width="32" height="11" rx="5.5" fill="#142D4E"/>
+    <!-- 身体 -->
+    <path d="M436 332 C436 320 504 320 504 332 L509 468 C509 477 431 477 431 468 Z" fill="#3478F6"/>
+    <!-- 围裙 -->
+    <path d="M450 342 L492 342 L496 466 L446 466 Z" fill="#FFF8EA"/>
+    <rect x="450" y="328" width="42" height="9" rx="4.5" fill="#FFB547"/>
+    <path d="M456 400 h30" stroke="#E2D3B8" stroke-width="2" stroke-linecap="round"/>
+    <path d="M456 436 h24" stroke="#E2D3B8" stroke-width="2" stroke-linecap="round"/>
+    <!-- 头部 -->
+    <rect x="463" y="302" width="15" height="18" rx="7" fill="#E4AF85"/>
+    <circle cx="470" cy="288" r="25" fill="#F3C7A1"/>
+    <circle cx="447" cy="292" r="4.5" fill="#E8B78F"/>
+    <path d="M444 289 C442 262 458 252 473 254 C493 256 499 272 495 293 C491 276 479 271 466 274 C456 276 448 281 444 289 Z" fill="#22303F"/>
+    <circle cx="496" cy="262" r="11" fill="#22303F"/>
+    <path d="M459 296 q4 -4 8 0" stroke="#22303F" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path d="M476 296 q4 -4 8 0" stroke="#22303F" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path d="M465 306 q5 4 10 0" stroke="#C98C63" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <!-- 平板 -->
+    <rect x="427" y="370" width="72" height="94" rx="10" fill="#FFFFFF" stroke="#142D4E" stroke-width="2.5"/>
+    <rect x="434" y="377" width="58" height="66" rx="4" fill="#EAF1FF"/>
+    <rect x="441" y="386" width="40" height="4" rx="2" fill="#B9CCEA"/>
+    <rect x="441" y="396" width="30" height="4" rx="2" fill="#B9CCEA"/>
+    <rect x="441" y="406" width="36" height="4" rx="2" fill="#B9CCEA"/>
+    <circle cx="446" cy="421" r="4.5" fill="#FFB547"/>
+    <text x="463" y="435" font-size="9" font-weight="700" fill="#3478F6" text-anchor="middle">AI 助手</text>
+    <!-- 手臂 -->
+    <path d="M438 338 C428 358 428 402 433 430" stroke="#F3C7A1" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <path d="M502 338 C512 358 512 402 506 430" stroke="#F3C7A1" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <circle cx="433" cy="433" r="7.5" fill="#F3C7A1"/>
+    <circle cx="506" cy="433" r="7.5" fill="#F3C7A1"/>
+  </g>
+
+  <!-- 卡片一：AI 对话 -->
+  <g filter="url(#cardShadow)">
+    <rect x="536" y="56" width="200" height="156" rx="16" fill="#FFFFFF"/>
+    <circle cx="559" cy="82" r="11" fill="#142D4E"/>
+    <path d="M559 75.5 l1.8 4.7 4.7 1.8 -4.7 1.8 -1.8 4.7 -1.8 -4.7 -4.7 -1.8 4.7 -1.8 Z" fill="#FFB547"/>
+    <text x="578" y="80" font-size="12" font-weight="700" fill="#142D4E">AI 经营助手</text>
+    <circle cx="578" cy="92" r="2.5" fill="#1F9D8B"/>
+    <text x="585" y="95" font-size="8.5" fill="#778397">在线</text>
+    <rect x="552" y="106" width="152" height="26" rx="13" fill="#EAF1FF"/>
+    <text x="564" y="123" font-size="9.5" fill="#263445">帮我写周三的上新文案</text>
+    <rect x="576" y="142" width="152" height="32" rx="12" fill="#F7F9FC" stroke="#E6ECF5"/>
+    <circle cx="594" cy="158" r="2.6" fill="#9AA9BD"/>
+    <circle cx="604" cy="158" r="2.6" fill="#9AA9BD"/>
+    <circle cx="614" cy="158" r="2.6" fill="#9AA9BD"/>
+    <rect x="620" y="153" width="90" height="5" rx="2.5" fill="#E6ECF5"/>
+  </g>
+
+  <!-- 卡片二：到店数据示意 -->
+  <g filter="url(#cardShadow)">
+    <rect x="558" y="232" width="180" height="154" rx="16" fill="#FFFFFF"/>
+    <text x="576" y="256" font-size="10" fill="#778397">本周到店客户（示意）</text>
+    <text x="576" y="289" font-size="26" font-weight="800" fill="#142D4E">32</text>
+    <text x="608" y="289" font-size="11" fill="#778397">位</text>
+    <rect x="674" y="266" width="46" height="20" rx="10" fill="#FFF4E0"/>
+    <text x="697" y="280" font-size="9" fill="#96610C" text-anchor="middle" font-weight="600">示例</text>
+    <g>
+      <rect x="576" y="328" width="14" height="24" rx="4" fill="url(#barGrad)" opacity="0.45"/>
+      <rect x="598" y="314" width="14" height="38" rx="4" fill="url(#barGrad)" opacity="0.6"/>
+      <rect x="620" y="322" width="14" height="30" rx="4" fill="url(#barGrad)" opacity="0.7"/>
+      <rect x="642" y="300" width="14" height="52" rx="4" fill="url(#barGrad)" opacity="0.85"/>
+      <rect x="664" y="288" width="14" height="64" rx="4" fill="url(#barGrad)"/>
+    </g>
+    <path d="M574 352 H702" stroke="#E6ECF5" stroke-width="2"/>
+    <g font-size="8" fill="#9AA9BD" text-anchor="middle">
+      <text x="583" y="366">一</text><text x="605" y="366">二</text><text x="627" y="366">三</text>
+      <text x="649" y="366">四</text><text x="671" y="366">五</text>
+    </g>
+  </g>
+
+  <!-- 卡片三：已完成清单 -->
+  <g filter="url(#cardShadow)">
+    <rect x="516" y="426" width="228" height="98" rx="16" fill="#FFFFFF"/>
+    <text x="536" y="450" font-size="10" fill="#778397">AI 今日已完成</text>
+    <circle cx="545" cy="468" r="8" fill="#E3F5F1"/>
+    <path d="M541.5 468 l2.6 2.6 5 -5.6" stroke="#1F9D8B" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="559" y="472" font-size="10" fill="#263445">小红书笔记已生成</text>
+    <circle cx="545" cy="496" r="8" fill="#E3F5F1"/>
+    <path d="M541.5 496 l2.6 2.6 5 -5.6" stroke="#1F9D8B" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="559" y="500" font-size="10" fill="#263445">朋友圈文案已排期</text>
+  </g>
+
+  <!-- 地面 -->
+  <path d="M258 548 C 340 540 392 540 430 546" stroke="#D7E2F1" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

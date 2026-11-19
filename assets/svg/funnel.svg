@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="img" aria-labelledby="funnelTitle" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif">
+  <title id="funnelTitle">内容营销漏斗与 AI 分工示意图</title>
+  <defs>
+    <linearGradient id="f1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B3A5F"/><stop offset="1" stop-color="#142D4E"/></linearGradient>
+    <linearGradient id="f2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4A8AF8"/><stop offset="1" stop-color="#2A63D6"/></linearGradient>
+    <linearGradient id="f3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2FB3A0"/><stop offset="1" stop-color="#17857A"/></linearGradient>
+    <linearGradient id="f4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFC061"/><stop offset="1" stop-color="#F0A03A"/></linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="760" height="420" fill="none"/>
+
+  <!-- 漏斗 -->
+  <g>
+    <path d="M40 30 H420 L390 100 H70 Z" fill="url(#f1)"/>
+    <path d="M70 112 H390 L360 182 H100 Z" fill="url(#f2)"/>
+    <path d="M100 194 H360 L335 264 H125 Z" fill="url(#f3)"/>
+    <path d="M125 276 H335 L310 346 H150 Z" fill="url(#f4)"/>
+
+    <g fill="#FFFFFF">
+      <text x="58" y="60" font-size="11" opacity="0.7" font-family="SFMono-Regular, Consolas, monospace">01</text>
+      <text x="58" y="84" font-size="17" font-weight="700">曝光 · 被看见</text>
+      <text x="86" y="144" font-size="11" opacity="0.75" font-family="SFMono-Regular, Consolas, monospace">02</text>
+      <text x="86" y="168" font-size="17" font-weight="700">兴趣 · 愿意了解</text>
+      <text x="114" y="226" font-size="11" opacity="0.75" font-family="SFMono-Regular, Consolas, monospace">03</text>
+      <text x="114" y="250" font-size="17" font-weight="700">咨询 · 主动联系</text>
+      <text x="138" y="308" font-size="11" opacity="0.8" font-family="SFMono-Regular, Consolas, monospace">04</text>
+      <text x="138" y="332" font-size="17" font-weight="700" fill="#3B2A09">成交 · 复购</text>
+    </g>
+    <g fill="#142D4E" opacity="0.28" font-size="9.5">
+      <text x="40" y="374">说明：漏斗宽度仅表示环节收窄，不代表真实转化率。</text>
+    </g>
+  </g>
+
+  <!-- 右侧 AI 分工 -->
+  <g>
+    <rect x="440" y="30" width="290" height="316" rx="18" fill="#FFFFFF" stroke="#E3E9F2"/>
+    <text x="464" y="58" font-size="11" font-weight="700" fill="#778397" letter-spacing="1.5">AI 在每个环节做什么</text>
+
+    <g>
+      <circle cx="466" cy="88" r="5" fill="#142D4E"/>
+      <text x="482" y="86" font-size="12" font-weight="700" fill="#142D4E">把门店信息变成可传播的内容</text>
+      <text x="482" y="103" font-size="10.5" fill="#778397">选题、标题、脚本、封面文案</text>
+
+      <circle cx="466" cy="140" r="5" fill="#3478F6"/>
+      <text x="482" y="138" font-size="12" font-weight="700" fill="#142D4E">把普通卖点讲成客户在意的理由</text>
+      <text x="482" y="155" font-size="10.5" fill="#778397">卖点提炼、场景化描述、对比说明</text>
+
+      <circle cx="466" cy="192" r="5" fill="#1F9D8B"/>
+      <text x="482" y="190" font-size="12" font-weight="700" fill="#142D4E">把重复回答变成标准话术</text>
+      <text x="482" y="207" font-size="10.5" fill="#778397">客服 FAQ、私信回复、预约确认</text>
+
+      <circle cx="466" cy="244" r="5" fill="#FFB547"/>
+      <text x="482" y="242" font-size="12" font-weight="700" fill="#142D4E">把一次成交变成下一次理由</text>
+      <text x="482" y="259" font-size="10.5" fill="#778397">回访提醒、会员召回、评价回复</text>
+    </g>
+
+    <path d="M440 282 H730" stroke="#E3E9F2" stroke-dasharray="3 5"/>
+    <text x="464" y="306" font-size="10.5" fill="#778397">人工保留：真实体验、现场拍摄、最终拍板</text>
+    <text x="464" y="324" font-size="10.5" fill="#778397">与客户建立信任的那部分，AI 替不了</text>
+  </g>
+
+  <!-- 连接线 -->
+  <g stroke="#CFD9E8" stroke-width="1.5" stroke-dasharray="4 5" fill="none">
+    <path d="M410 66 H440"/>
+    <path d="M400 148 H440"/>
+    <path d="M380 230 H440"/>
+    <path d="M345 312 H440"/>
+  </g>
+</svg>

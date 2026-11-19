@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" role="img" aria-labelledby="wgTitle wgDesc" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif">
+  <title id="wgTitle">网站资源库示意图</title>
+  <desc id="wgDesc">一个浏览器窗口里，左侧是平台后台、官方政策、数据趋势、学习资讯等分类，右侧是整理好的网站卡片书签。</desc>
+  <defs>
+    <linearGradient id="wgBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7FAFF"/><stop offset="1" stop-color="#EEF4FD"/>
+    </linearGradient>
+    <linearGradient id="wgTop" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1B3A61"/><stop offset="1" stop-color="#142D4E"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="760" height="460" rx="20" fill="url(#wgBg)"/>
+  <circle cx="676" cy="76" r="52" fill="#FFB547" opacity="0.12"/>
+  <circle cx="92" cy="382" r="42" fill="#3478F6" opacity="0.08"/>
+
+  <!-- 浏览器外框 -->
+  <rect x="42" y="46" width="676" height="368" rx="16" fill="#FFFFFF" stroke="#DCE6F5"/>
+  <path d="M42 78a16 16 0 0 1 16-16h644a16 16 0 0 1 16 16v26H42z" fill="url(#wgTop)"/>
+  <g fill="#7C93B4">
+    <circle cx="66" cy="59" r="4"/><circle cx="80" cy="59" r="4"/><circle cx="94" cy="59" r="4"/>
+  </g>
+  <rect x="118" y="50" width="330" height="18" rx="9" fill="#FFFFFF" opacity="0.12"/>
+  <text x="130" y="63" font-size="10.5" fill="#B9CCEA">aibizgrowth.cn / websites</text>
+
+  <!-- 左侧分类 -->
+  <rect x="42" y="104" width="164" height="310" fill="#F8FBFF"/>
+  <line x1="206" y1="104" x2="206" y2="414" stroke="#EAF0F9"/>
+  <text x="62" y="130" font-size="11" fill="#778397">按用途分类</text>
+  <g font-size="12">
+    <rect x="56" y="144" width="136" height="32" rx="8" fill="#142D4E"/>
+    <text x="72" y="165" fill="#FFFFFF">平台后台</text>
+    <rect x="56" y="184" width="136" height="32" rx="8" fill="#EEF4FD"/>
+    <text x="72" y="205" fill="#263445">官方与政策</text>
+    <rect x="56" y="224" width="136" height="32" rx="8" fill="#EEF4FD"/>
+    <text x="72" y="245" fill="#263445">数据与趋势</text>
+    <rect x="56" y="264" width="136" height="32" rx="8" fill="#EEF4FD"/>
+    <text x="72" y="285" fill="#263445">学习与资讯</text>
+    <rect x="56" y="304" width="136" height="32" rx="8" fill="#EEF4FD"/>
+    <text x="72" y="325" fill="#263445">素材与设计</text>
+    <rect x="56" y="344" width="136" height="32" rx="8" fill="#EEF4FD"/>
+    <text x="72" y="365" fill="#263445">效率工具</text>
+  </g>
+
+  <!-- 右侧卡片 -->
+  <g>
+    <rect x="228" y="118" width="146" height="82" rx="12" fill="#FFFFFF" stroke="#E1EAF7"/>
+    <rect x="242" y="132" width="26" height="26" rx="8" fill="#FFF3DD"/>
+    <circle cx="255" cy="145" r="6" fill="#FFB547"/>
+    <text x="242" y="178" font-size="12" font-weight="600" fill="#142D4E">抖音来客</text>
+    <text x="242" y="192" font-size="10" fill="#778397">本地生活后台</text>
+
+    <rect x="390" y="118" width="146" height="82" rx="12" fill="#FFFFFF" stroke="#E1EAF7"/>
+    <rect x="404" y="132" width="26" height="26" rx="8" fill="#E7EFFE"/>
+    <path d="M411 145h12M411 149h8" stroke="#3478F6" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="404" y="178" font-size="12" font-weight="600" fill="#142D4E">平台规则中心</text>
+    <text x="404" y="192" font-size="10" fill="#778397">先看规则再动手</text>
+
+    <rect x="552" y="118" width="146" height="82" rx="12" fill="#FFFFFF" stroke="#E1EAF7"/>
+    <rect x="566" y="132" width="26" height="26" rx="8" fill="#E7EFFE"/>
+    <path d="M572 152v-6M579 152v-11M586 152v-4" stroke="#3478F6" stroke-width="2" stroke-linecap="round"/>
+    <text x="566" y="178" font-size="12" font-weight="600" fill="#142D4E">行业报告库</text>
+    <text x="566" y="192" font-size="10" fill="#778397">看趋势，不迷信</text>
+
+    <rect x="228" y="216" width="146" height="82" rx="12" fill="#FFFFFF" stroke="#E1EAF7"/>
+    <rect x="242" y="230" width="26" height="26" rx="8" fill="#E7EFFE"/>
+    <path d="M248 236h14v14h-14z" fill="none" stroke="#3478F6" stroke-width="1.4"/>
+    <text x="242" y="276" font-size="12" font-weight="600" fill="#142D4E">素材站</text>
+    <text x="242" y="290" font-size="10" fill="#778397">注意商用授权</text>
+
+    <rect x="390" y="216" width="146" height="82" rx="12" fill="#FFFFFF" stroke="#E1EAF7"/>
+    <rect x="404" y="230" width="26" height="26" rx="8" fill="#FFF3DD"/>
+    <path d="M411 243h12M411 247h8" stroke="#C97C1B" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="404" y="276" font-size="12" font-weight="600" fill="#142D4E">官方帮助中心</text>
+    <text x="404" y="290" font-size="10" fill="#778397">遇到问题先查这里</text>
+
+    <rect x="552" y="216" width="146" height="82" rx="12" fill="#FFFFFF" stroke="#E1EAF7"/>
+    <rect x="566" y="230" width="26" height="26" rx="8" fill="#E7EFFE"/>
+    <circle cx="579" cy="243" r="6" fill="none" stroke="#3478F6" stroke-width="1.6"/>
+    <text x="566" y="276" font-size="12" font-weight="600" fill="#142D4E">效率工具</text>
+    <text x="566" y="290" font-size="10" fill="#778397">少装，够用就行</text>
+  </g>
+
+  <!-- 底部建议条 -->
+  <rect x="228" y="322" width="470" height="62" rx="12" fill="#F3F8FF" stroke="#DCE6F5"/>
+  <circle cx="252" cy="347" r="9" fill="#142D4E"/>
+  <text x="252" y="351" text-anchor="middle" font-size="11" font-weight="700" fill="#FFB547">i</text>
+  <text x="270" y="343" font-size="11.5" fill="#263445">从平台官方后台进入，比收藏来的链接更安全。</text>
+  <text x="270" y="362" font-size="11.5" fill="#778397">网址、入口和规则都可能调整，用之前先核对一次。</text>
+  <rect x="610" y="338" width="74" height="26" rx="13" fill="#142D4E"/>
+  <text x="647" y="355" text-anchor="middle" font-size="10.5" fill="#FFFFFF">收藏前先核</text>
+</svg>

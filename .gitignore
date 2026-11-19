@@ -1,0 +1,8 @@
+# 开发期临时备份，不纳入版本库
+assets/data.bak/
+
+# 系统与编辑器
+Thumbs.db
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" role="img" aria-labelledby="wfTitle" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif">
+  <title id="wfTitle">AI 内容生产工作流示意图：素材、生成、审核、发布、复盘</title>
+  <defs>
+    <marker id="wfArrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0 0 L6 3 L0 6 Z" fill="#FFB547"/>
+    </marker>
+    <linearGradient id="wfBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5F9FF"/><stop offset="1" stop-color="#EDF3FC"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="760" height="250" rx="18" fill="url(#wfBg)"/>
+  <text x="30" y="36" font-size="11" font-weight="700" fill="#778397" letter-spacing="1.5">一周内容生产流水线 · 示意</text>
+
+  <g font-size="10" fill="#9AA9BD" font-family="SFMono-Regular, Consolas, monospace">
+    <text x="48" y="66">STEP 01</text>
+    <text x="192" y="66">STEP 02</text>
+    <text x="336" y="66">STEP 03</text>
+    <text x="480" y="66">STEP 04</text>
+    <text x="624" y="66">STEP 05</text>
+  </g>
+
+  <!-- 五个步骤 -->
+  <g>
+    <rect x="30" y="78" width="128" height="116" rx="14" fill="#FFFFFF" stroke="#E3E9F2"/>
+    <circle cx="94" cy="108" r="15" fill="#EAF1FF"/>
+    <path d="M88 108 h12 M94 102 v12" stroke="#3478F6" stroke-width="2" stroke-linecap="round"/>
+    <text x="94" y="146" text-anchor="middle" font-size="12" font-weight="700" fill="#142D4E">攒素材</text>
+    <text x="94" y="166" text-anchor="middle" font-size="10" fill="#778397">手机随手拍</text>
+    <text x="94" y="181" text-anchor="middle" font-size="10" fill="#778397">客户常问的问题</text>
+  </g>
+
+  <g>
+    <rect x="174" y="78" width="128" height="116" rx="14" fill="#FFFFFF" stroke="#E3E9F2"/>
+    <circle cx="238" cy="108" r="15" fill="#E8EEFF"/>
+    <path d="M238 99 l2.4 6.2 6.2 2.4 -6.2 2.4 -2.4 6.2 -2.4 -6.2 -6.2 -2.4 6.2 -2.4 Z" fill="#3478F6"/>
+    <text x="238" y="146" text-anchor="middle" font-size="12" font-weight="700" fill="#142D4E">AI 生成</text>
+    <text x="238" y="166" text-anchor="middle" font-size="10" fill="#778397">5 条选题</text>
+    <text x="238" y="181" text-anchor="middle" font-size="10" fill="#778397">2 版脚本</text>
+  </g>
+
+  <g>
+    <rect x="318" y="78" width="128" height="116" rx="14" fill="#FFFFFF" stroke="#FFB547" stroke-width="1.5"/>
+    <circle cx="382" cy="108" r="15" fill="#FFF4E0"/>
+    <path d="M375 108 l5 5 9 -10" stroke="#C98A22" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="382" y="146" text-anchor="middle" font-size="12" font-weight="700" fill="#142D4E">人工审</text>
+    <text x="382" y="166" text-anchor="middle" font-size="10" fill="#778397">改掉假大空</text>
+    <text x="382" y="181" text-anchor="middle" font-size="10" fill="#778397">核对价格与承诺</text>
+  </g>
+
+  <g>
+    <rect x="462" y="78" width="128" height="116" rx="14" fill="#FFFFFF" stroke="#E3E9F2"/>
+    <circle cx="526" cy="108" r="15" fill="#E3F5F1"/>
+    <path d="M520 104 l12 6 -12 6 Z" fill="#1F9D8B"/>
+    <text x="526" y="146" text-anchor="middle" font-size="12" font-weight="700" fill="#142D4E">按时发</text>
+    <text x="526" y="166" text-anchor="middle" font-size="10" fill="#778397">固定时段</text>
+    <text x="526" y="181" text-anchor="middle" font-size="10" fill="#778397">一稿多平台改</text>
+  </g>
+
+  <g>
+    <rect x="606" y="78" width="128" height="116" rx="14" fill="#FFFFFF" stroke="#E3E9F2"/>
+    <circle cx="670" cy="108" r="15" fill="#FFF4E0"/>
+    <path d="M663 116 V106 M670 116 V100 M677 116 V110" stroke="#C98A22" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="670" y="146" text-anchor="middle" font-size="12" font-weight="700" fill="#142D4E">回头看</text>
+    <text x="670" y="166" text-anchor="middle" font-size="10" fill="#778397">看完播、咨询</text>
+    <text x="670" y="181" text-anchor="middle" font-size="10" fill="#778397">留哪种、改哪种</text>
+  </g>
+
+  <!-- 箭头 -->
+  <g stroke="#FFB547" stroke-width="2" stroke-linecap="round" marker-end="url(#wfArrow)">
+    <path d="M162 136 H170"/>
+    <path d="M306 136 H314"/>
+    <path d="M450 136 H458"/>
+    <path d="M594 136 H602"/>
+  </g>
+  <path d="M670 200 C670 222 640 232 610 232 H110 C80 232 60 220 60 204" stroke="#CFD9E8" stroke-width="1.5" stroke-dasharray="4 6" fill="none"/>
+  <text x="365" y="226" text-anchor="middle" font-size="10" fill="#9AA9BD">把有效的选题存进自己的模板库，下周直接复用</text>
+</svg>

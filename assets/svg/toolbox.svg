@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" role="img" aria-labelledby="tbTitle tbDesc" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif">
+  <title id="tbTitle">工具选择示意图</title>
+  <desc id="tbDesc">左侧按场景、预算、难度三步筛选，右侧从对话、绘图、视频、写作、客服、表格、数据、自动化、建站等工具中挑出适合自己的一个。</desc>
+  <defs>
+    <linearGradient id="tbBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7FAFF"/><stop offset="1" stop-color="#EDF3FC"/>
+    </linearGradient>
+    <linearGradient id="tbAmber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFC86B"/><stop offset="1" stop-color="#FFB547"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="760" height="460" rx="20" fill="url(#tbBg)"/>
+  <g stroke="#DCE6F5" stroke-width="1">
+    <path d="M0 116H760M0 232H760M0 348H760M190 0V460M380 0V460M570 0V460" opacity="0.6"/>
+  </g>
+
+  <!-- 左侧：三步筛选 -->
+  <text x="44" y="58" font-size="19" font-weight="700" fill="#142D4E">先定场景，再选工具</text>
+  <text x="44" y="82" font-size="12.5" fill="#778397">不追新，只挑今天用得上的</text>
+
+  <g>
+    <rect x="44" y="106" width="118" height="40" rx="20" fill="#FFFFFF" stroke="#D9E3F2"/>
+    <circle cx="66" cy="126" r="9" fill="#E7EFFE"/>
+    <text x="66" y="130" text-anchor="middle" font-size="11" font-weight="700" fill="#3478F6">1</text>
+    <text x="84" y="130" font-size="13" fill="#263445">我是谁</text>
+
+    <rect x="44" y="160" width="118" height="40" rx="20" fill="#FFFFFF" stroke="#D9E3F2"/>
+    <circle cx="66" cy="180" r="9" fill="#E7EFFE"/>
+    <text x="66" y="184" text-anchor="middle" font-size="11" font-weight="700" fill="#3478F6">2</text>
+    <text x="84" y="184" font-size="13" fill="#263445">要解决什么</text>
+
+    <rect x="44" y="214" width="118" height="40" rx="20" fill="#FFFFFF" stroke="#D9E3F2"/>
+    <circle cx="66" cy="234" r="9" fill="#E7EFFE"/>
+    <text x="66" y="238" text-anchor="middle" font-size="11" font-weight="700" fill="#3478F6">3</text>
+    <text x="84" y="238" font-size="13" fill="#263445">能花多少钱</text>
+  </g>
+
+  <g stroke="#B9CCEA" stroke-width="1.6" stroke-dasharray="5 6" fill="none">
+    <path d="M162 126 C188 126 190 232 216 232"/>
+    <path d="M162 180 H216"/>
+    <path d="M162 234 C188 234 190 232 216 232"/>
+  </g>
+  <circle cx="222" cy="232" r="5" fill="#FFB547"/>
+
+  <g transform="translate(238,196)">
+    <rect x="0" y="0" width="86" height="72" rx="14" fill="#FFFFFF" stroke="#E1EAF7"/>
+    <text x="43" y="30" text-anchor="middle" font-size="12" fill="#778397">匹配出</text>
+    <text x="43" y="52" text-anchor="middle" font-size="20" font-weight="700" fill="#142D4E">1 个</text>
+  </g>
+
+  <!-- 右侧：工具网格 -->
+  <g font-size="12.5" fill="#263445">
+    <g transform="translate(360,56)">
+      <rect width="112" height="88" rx="14" fill="#FFFFFF" stroke="#E1EAF7"/>
+      <circle cx="24" cy="26" r="11" fill="#E7EFFE"/><path d="M19 26h10M24 21v10" stroke="#3478F6" stroke-width="1.8" stroke-linecap="round"/>
+      <text x="14" y="60" font-size="13" font-weight="600">AI 对话</text><text x="14" y="78" font-size="11" fill="#778397">问、写、改</text>
+    </g>
+    <g transform="translate(488,56)">
+      <rect width="112" height="88" rx="14" fill="url(#tbAmber)" stroke="#F0A62F"/>
+      <circle cx="24" cy="26" r="11" fill="#FFFFFF" opacity="0.72"/><circle cx="24" cy="26" r="4" fill="#8A5100"/>
+      <text x="14" y="60" font-size="13" font-weight="700" fill="#3D2600">AI 绘图</text><text x="14" y="78" font-size="11" fill="#6B4400">海报 / 菜单</text>
+    </g>
+    <g transform="translate(616,56)">
+      <rect width="112" height="88" rx="14" fill="#FFFFFF" stroke="#E1EAF7"/>
+      <circle cx="24" cy="26" r="11" fill="#E7EFFE"/><path d="M21 22l8 4-8 4z" fill="#3478F6"/>
+      <text x="14" y="60" font-size="13" font-weight="600">AI 视频</text><text x="14" y="78" font-size="11" fill="#778397">剪辑 / 口播</text>
+    </g>
+
+    <g transform="translate(360,160)">
+      <rect width="112" height="88" rx="14" fill="#FFFFFF" stroke="#E1EAF7"/>
+      <circle cx="24" cy="26" r="11" fill="#E7EFFE"/><path d="M19 22h10M19 27h10M19 32h6" stroke="#3478F6" stroke-width="1.6" stroke-linecap="round"/>
+      <text x="14" y="60" font-size="13" font-weight="600">AI 写作</text><text x="14" y="78" font-size="11" fill="#778397">文案 / 脚本</text>
+    </g>
+    <g transform="translate(488,160)">
+      <rect width="112" height="88" rx="14" fill="#FFFFFF" stroke="#E1EAF7"/>
+      <circle cx="24" cy="26" r="11" fill="#E7EFFE"/><path d="M20 24a5 5 0 0 1 9 2c0 3-4 3-4 6" stroke="#3478F6" stroke-width="1.7" fill="none" stroke-linecap="round"/><circle cx="25" cy="35" r="1.4" fill="#3478F6"/>
+      <text x="14" y="60" font-size="13" font-weight="600">AI 客服</text><text x="14" y="78" font-size="11" fill="#778397">常见问题</text>
+    </g>
+    <g transform="translate(616,160)">
+      <rect width="112" height="88" rx="14" fill="#FFFFFF" stroke="#E1EAF7"/>
+      <circle cx="24" cy="26" r="11" fill="#E7EFFE"/><path d="M18 22h12v11H18zM18 26h12M22 22v11M26 22v11" stroke="#3478F6" stroke-width="1.3" fill="none"/>
+      <text x="14" y="60" font-size="13" font-weight="600">AI 表格</text><text x="14" y="78" font-size="11" fill="#778397">整理 / 汇总</text>
+    </g>
+
+    <g transform="translate(360,264)">
+      <rect width="112" height="88" rx="14" fill="#FFFFFF" stroke="#E1EAF7"/>
+      <circle cx="24" cy="26" r="11" fill="#E7EFFE"/><path d="M19 32v-4M24 32v-7M29 32v-11" stroke="#3478F6" stroke-width="2" stroke-linecap="round"/>
+      <text x="14" y="60" font-size="13" font-weight="600">AI 数据</text><text x="14" y="78" font-size="11" fill="#778397">复盘 / 看趋势</text>
+    </g>
+    <g transform="translate(488,264)">
+      <rect width="112" height="88" rx="14" fill="#FFFFFF" stroke="#E1EAF7"/>
+      <circle cx="24" cy="26" r="11" fill="#E7EFFE"/><circle cx="24" cy="26" r="4" fill="none" stroke="#3478F6" stroke-width="1.6"/><path d="M24 18v4M24 30v4M16 26h4M28 26h4" stroke="#3478F6" stroke-width="1.6" stroke-linecap="round"/>
+      <text x="14" y="60" font-size="13" font-weight="600">自动化</text><text x="14" y="78" font-size="11" fill="#778397">流程串起来</text>
+    </g>
+    <g transform="translate(616,264)">
+      <rect width="112" height="88" rx="14" fill="#FFFFFF" stroke="#E1EAF7"/>
+      <circle cx="24" cy="26" r="11" fill="#E7EFFE"/><rect x="18" y="21" width="12" height="9" rx="1.5" fill="none" stroke="#3478F6" stroke-width="1.5"/><path d="M18 24h12" stroke="#3478F6" stroke-width="1.5"/>
+      <text x="14" y="60" font-size="13" font-weight="600">AI 建站</text><text x="14" y="78" font-size="11" fill="#778397">落地页 / 介绍</text>
+    </g>
+  </g>
+
+  <!-- 底部提示条 -->
+  <g transform="translate(360,372)">
+    <rect width="368" height="44" rx="12" fill="#142D4E"/>
+    <circle cx="24" cy="22" r="8" fill="#FFB547"/>
+    <text x="24" y="27" text-anchor="middle" font-size="11" font-weight="700" fill="#3D2600">!</text>
+    <text x="42" y="26.5" font-size="12" fill="#DCE7F7">价格与功能会变，下单前请以官网为准</text>
+  </g>
+</svg>

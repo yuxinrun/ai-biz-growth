@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380" role="img" aria-labelledby="lsTitle lsDesc" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif">
+  <title id="lsTitle">页面走丢了示意图</title>
+  <desc id="lsDesc">路边立着一块指路牌，一条虚线小路绕了一圈又回到原点，旁边站着一个拿着地图的人。</desc>
+  <defs>
+    <linearGradient id="lsBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8FAFF"/><stop offset="1" stop-color="#EDF3FC"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="560" height="380" rx="20" fill="url(#lsBg)"/>
+  <circle cx="470" cy="84" r="46" fill="#FFB547" opacity="0.14"/>
+  <circle cx="96" cy="300" r="52" fill="#3478F6" opacity="0.07"/>
+
+  <!-- 地面 -->
+  <path d="M40 306h480" stroke="#D5E1F2" stroke-width="2" stroke-linecap="round"/>
+  <ellipse cx="280" cy="308" rx="150" ry="9" fill="#142D4E" opacity="0.05"/>
+
+  <!-- 路牌杆 -->
+  <rect x="196" y="128" width="8" height="180" rx="4" fill="#142D4E"/>
+
+  <!-- 左箭头 -->
+  <g>
+    <path d="M120 140h68v34h-68l-16-17z" fill="#142D4E"/>
+    <text x="140" y="163" font-size="12" fill="#FFFFFF">首页</text>
+  </g>
+  <!-- 右箭头 -->
+  <g>
+    <path d="M212 186h90v34h-90l-14-17z" fill="#FFB547"/>
+    <text x="230" y="209" font-size="12" font-weight="700" fill="#3D2600">这一页</text>
+  </g>
+  <!-- 左箭头（下） -->
+  <g>
+    <path d="M204 232h-72v32h72l14-16z" fill="#DCE7F7"/>
+    <text x="146" y="254" font-size="12" fill="#142D4E">返回</text>
+  </g>
+
+  <!-- 虚线路径 -->
+  <path d="M212 292c40-14 76 10 118 0 44-11 62-52 34-74-26-20-70-6-72 24-2 28 44 40 76 26"
+        fill="none" stroke="#93ABCB" stroke-width="2.4" stroke-dasharray="6 7" stroke-linecap="round"/>
+  <circle cx="368" cy="268" r="5" fill="#FFB547"/>
+
+  <!-- 地图小人 -->
+  <g transform="translate(392,214)">
+    <circle cx="26" cy="10" r="11" fill="#FFD9A0"/>
+    <path d="M26 21c-11 0-17 8-17 19v16h34V40c0-11-6-19-17-19z" fill="#3478F6"/>
+    <path d="M18 56h16v14H18z" fill="#142D4E"/>
+    <rect x="30" y="26" width="26" height="20" rx="3" fill="#FFFFFF" stroke="#C7D6EA" transform="rotate(-8 30 26)"/>
+    <path d="M34 32h14M34 37h10" stroke="#B9CCEA" stroke-width="1.6" stroke-linecap="round" transform="rotate(-8 30 26)"/>
+  </g>
+
+  <!-- 问号 -->
+  <g transform="translate(88,120)">
+    <circle cx="34" cy="34" r="34" fill="#FFFFFF" stroke="#E1EAF7"/>
+    <text x="34" y="46" text-anchor="middle" font-size="34" font-weight="700" fill="#FFB547">?</text>
+  </g>
+
+  <!-- 小草 -->
+  <g stroke="#B9CCEA" stroke-width="2" stroke-linecap="round" fill="none">
+    <path d="M446 306v-14M451 306v-9M441 306v-8"/>
+    <path d="M78 306v-12M83 306v-7M73 306v-6"/>
+  </g>
+</svg>

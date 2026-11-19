@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" role="img" aria-labelledby="cbTitle" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif">
+  <title id="cbTitle">人工与 AI 协作分工示意图</title>
+  <defs>
+    <linearGradient id="cbBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EAF1FF"/><stop offset="1" stop-color="#F7FAFF"/></linearGradient>
+    <linearGradient id="cbAmber" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF4E0"/><stop offset="1" stop-color="#FFFBF3"/></linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="720" height="380" rx="20" fill="#F7F9FC"/>
+
+  <!-- AI 列 -->
+  <rect x="24" y="24" width="316" height="300" rx="18" fill="url(#cbBlue)" stroke="#D8E5FA"/>
+  <g>
+    <circle cx="58" cy="58" r="17" fill="#3478F6"/>
+    <path d="M58 50 l2.6 6.6 6.6 2.6 -6.6 2.6 -2.6 6.6 -2.6 -6.6 -6.6 -2.6 6.6 -2.6 Z" fill="#FFFFFF"/>
+    <text x="86" y="56" font-size="14" font-weight="700" fill="#142D4E">AI 负责的部分</text>
+    <text x="86" y="73" font-size="10" fill="#5C7391">耗时、重复、需要很多版本</text>
+  </g>
+  <g font-size="11" fill="#263445">
+    <circle cx="52" cy="106" r="3" fill="#3478F6"/><text x="66" y="110">一次生成 5 个选题、3 版文案</text>
+    <circle cx="52" cy="136" r="3" fill="#3478F6"/><text x="66" y="140">把口语整理成结构化的步骤</text>
+    <circle cx="52" cy="166" r="3" fill="#3478F6"/><text x="66" y="170">按平台规则改写标题与开头</text>
+    <circle cx="52" cy="196" r="3" fill="#3478F6"/><text x="66" y="200">批量整理客户问题与回复</text>
+    <circle cx="52" cy="226" r="3" fill="#3478F6"/><text x="66" y="230">把表格数据读成经营结论</text>
+    <circle cx="52" cy="256" r="3" fill="#3478F6"/><text x="66" y="260">把一次内容改写成多平台版本</text>
+  </g>
+  <rect x="44" y="276" width="276" height="32" rx="8" fill="#FFFFFF" opacity="0.75"/>
+  <text x="56" y="297" font-size="10" fill="#5C7391">记住一句话：AI 出草稿，不出最终稿。</text>
+
+  <!-- 人列 -->
+  <rect x="380" y="24" width="316" height="300" rx="18" fill="url(#cbAmber)" stroke="#F4E3C6"/>
+  <g>
+    <circle cx="414" cy="58" r="17" fill="#FFB547"/>
+    <circle cx="414" cy="55" r="5.5" fill="#FFFFFF"/>
+    <path d="M405 68 C405 62 423 62 423 68" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text x="442" y="56" font-size="14" font-weight="700" fill="#142D4E">你必须负责的部分</text>
+    <text x="442" y="73" font-size="10" fill="#8A7554">真实、判断、信任</text>
+  </g>
+  <g font-size="11" fill="#263445">
+    <circle cx="408" cy="106" r="3" fill="#C98A22"/><text x="422" y="110">确认哪些话是真的、能兑现</text>
+    <circle cx="408" cy="136" r="3" fill="#C98A22"/><text x="422" y="140">拍真实的店、真实的产品</text>
+    <circle cx="408" cy="166" r="3" fill="#C98A22"/><text x="422" y="170">判断这个内容像不像你</text>
+    <circle cx="408" cy="196" r="3" fill="#C98A22"/><text x="422" y="200">和客户当面把话说清楚</text>
+    <circle cx="408" cy="226" r="3" fill="#C98A22"/><text x="422" y="230">决定降价、上新、招人</text>
+    <circle cx="408" cy="256" r="3" fill="#C98A22"/><text x="422" y="260">为承诺和结果负责</text>
+  </g>
+  <rect x="400" y="276" width="276" height="32" rx="8" fill="#FFFFFF" opacity="0.75"/>
+  <text x="412" y="297" font-size="10" fill="#8A7554">AI 不会替你承担经营后果，这点要记牢。</text>
+
+  <!-- 中间连接 -->
+  <g>
+    <circle cx="360" cy="174" r="26" fill="#FFFFFF" stroke="#E3E9F2"/>
+    <path d="M350 174 h20 M364 168 l6 6 -6 6" stroke="#142D4E" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="360" y="214" text-anchor="middle" font-size="9" fill="#9AA9BD">人机协作</text>
+  </g>
+
+  <text x="360" y="352" text-anchor="middle" font-size="10" fill="#9AA9BD">示意图：先分工，再谈效率。分工不清，AI 只会放大混乱。</text>
+</svg>
